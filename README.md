@@ -1,1 +1,1 @@
-# Gunman-project
+[Play!](game.html)
