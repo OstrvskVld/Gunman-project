@@ -1,1 +1,1 @@
-[Play!](game.html)
+[Start game!](game.html)
