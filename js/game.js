@@ -108,6 +108,7 @@ function prepareForDuel() {
         message.classList.add('message--fire');
         sfxFire.play();
         gunman.addEventListener('mousedown', playerShootsGunman);
+        gunman.addEventListener('touchstart', playerShootsGunman);
         readyToDuel = true;
         timeCounter(Date.now());
         setTimeout(gunmanShootsPlayer, timeToDuel);
@@ -154,6 +155,8 @@ function playerShootsGunman() {
         gunman.classList.remove('standing', `gunman-level-${level}__shooting`);
         gunman.classList.add(`gunman-level-${level}__death`);
         gunman.removeEventListener('mousedown', playerShootsGunman);
+        gunman.removeEventListener('touchstart', playerShootsGunman);
+
         sfxWin.play();
 
         setTimeout(() => {
