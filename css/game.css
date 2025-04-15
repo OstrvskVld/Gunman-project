@@ -649,3 +649,69 @@ body {
 }
 /*                              Gunman style                                 */
 
+/* 📱 Mobile-first responsive design */
+
+@media (max-width: 768px) {
+  .game-menu,
+  .game-screen,
+  .win-screen {
+    width: 90vw;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .game-menu__title {
+    font-size: 32px;
+  }
+
+  .button {
+    font-size: 16px;
+  }
+
+  .wrapper {
+    width: 100vw;
+    height: auto;
+  }
+
+  .gunman {
+    transform: scale(0.7);
+    left: 50%;
+  }
+
+  .players-panel,
+  .time-panel,
+  .score-panel {
+    font-size: 16px;
+  }
+
+  .score-panel__score {
+    top: 70%;
+    left: 40%;
+    transform: translateX(-50%);
+  }
+
+  .score-panel__level {
+    top: 75%;
+    left: 70%;
+    transform: translateX(-50%);
+  }
+
+  .time-panel__gunman,
+  .time-panel__you {
+    font-size: 28px;
+  }
+
+  .win-screen__title {
+    font-size: 26px;
+  }
+
+  .win-screen__title span {
+    font-size: 32px;
+  }
+
+  .message--win,
+  .message--dead {
+    font-size: 22px;
+  }
+}
